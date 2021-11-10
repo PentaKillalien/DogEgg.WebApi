@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DogEgg.Core\DogEgg.Core.csproj" />
+    <ProjectReference Include="..\DogEgg.DbAccess\DogEgg.DbAccess.csproj" />
+    <ProjectReference Include="..\DogEgg.Driver\DogEgg.Driver.csproj" />
+    <ProjectReference Include="..\DogEgg.Model\DogEgg.Model.csproj" />
   </ItemGroup>
 
 </Project>

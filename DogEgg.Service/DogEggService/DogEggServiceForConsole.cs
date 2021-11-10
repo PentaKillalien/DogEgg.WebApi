@@ -1,4 +1,7 @@
 ﻿using DogEgg.Core.DogEggInterface;
+using DogEgg.DbAccess.DogEggDbAccess;
+using DogEgg.Driver.DogEggDriver;
+using DogEgg.Model.ChatModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +12,19 @@ namespace DogEgg.Service.DogEggService
 {
     public class DogEggServiceForConsole : DogEggServiceInterface
     {
+        private TcpServerDriver Server =null;
         public void Start()
         {
-            Console.WriteLine("启动");
+
+            Server =  new TcpServerDriver(9004);
+            Server.Connect();
+            Server.InfoTrigger = new Action<string,string>(InfoTrigger);
+
+
+        }
+
+        private void InfoTrigger(string Info,string ip) {
+            Server.SendInfoBack(Info, ip);
         }
     }
 }
