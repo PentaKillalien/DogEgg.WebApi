@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DogEgg.Core\DogEgg.Core.csproj" />
+    <ProjectReference Include="..\DogEgg.Middware\DogEgg.Middware.csproj" />
+    <ProjectReference Include="..\DogEgg.Service\DogEgg.Service.csproj" />
+  </ItemGroup>
+
+</Project>
