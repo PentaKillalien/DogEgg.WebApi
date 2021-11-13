@@ -22,7 +22,7 @@ namespace DogEgg.WebApi
             .UseServiceProviderFactory(new AutofacServiceProviderFactory())//¼¯³ÉAutoFac
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.
+                    webBuilder.UseUrls("http://*:5000").
                     UseStartup<Startup>();
                 });
     }

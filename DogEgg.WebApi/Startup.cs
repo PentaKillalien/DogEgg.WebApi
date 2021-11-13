@@ -35,7 +35,7 @@ namespace DogEgg.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(o => o.AddPolicy("any", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));    //services.AddCors(o=>o.AddPolicy("any",p=>p.WithOrigins(["https://www.baidu.com","https://www.baidu.com"])().AllowAnyHeader().AllowAnyMethod()));
+           // services.AddCors(o => o.AddPolicy("any", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));    //services.AddCors(o=>o.AddPolicy("any",p=>p.WithOrigins(["https://www.baidu.com","https://www.baidu.com"])().AllowAnyHeader().AllowAnyMethod()));
                                                                                                                      //AllowAnyOrigin()允许所有域名跨域、WithOrigins()允许指定域名跨域
 
             services.AddControllers();
@@ -54,7 +54,7 @@ namespace DogEgg.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DogEgg.WebApi v1"));
             }
-            app.UseCors();
+            //app.UseCors();
             //app.UseHttpsRedirection();
 
             app.UseRouting();

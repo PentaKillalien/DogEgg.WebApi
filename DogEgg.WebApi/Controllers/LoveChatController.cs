@@ -15,7 +15,6 @@ namespace DogEgg.WebApi.Controllers
         /// 用户登录
         /// </summary>
         /// <returns></returns>
-        [EnableCors("any")]
         [Route("UserLogin")]
         [HttpPost]
         public string UserLogin(string Uname,string Pwd)
