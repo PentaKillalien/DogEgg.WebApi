@@ -24,6 +24,7 @@ namespace DogEgg.WebApi
                 {
                     webBuilder.UseUrls("http://*:5000").
                     UseStartup<Startup>();
+
                 });
     }
 }
