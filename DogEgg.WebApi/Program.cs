@@ -21,7 +21,7 @@ namespace DogEgg.WebApi
             Host.CreateDefaultBuilder(args)
             //加入日志
             .ConfigureLogging((hostBuilder,logging) => { 
-                logging.ClearProviders ();
+                logging.ClearProviders ();//清除系统默认日志
                 logging.AddLog4Net("log4net.config");
             
             })
