@@ -19,6 +19,12 @@ namespace DogEgg.WebApi
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+            //加入日志
+            .ConfigureLogging((hostBuilder,logging) => { 
+                logging.ClearProviders ();
+                logging.AddLog4Net("log4net.config");
+            
+            })
             .UseServiceProviderFactory(new AutofacServiceProviderFactory())//集成AutoFac
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
