@@ -2,6 +2,7 @@
 using DogEgg.Model.ChatModel;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace DogEgg.WebApi.Controllers
 {
     public class LoveChatController : ControllerBase
     {
+        ILogger<LoveChatController> _logger;
+        public LoveChatController(ILogger<LoveChatController> logger)
+        {
+            _logger =logger;
+    }
         /// <summary>
         /// 用户登录
         /// </summary>
@@ -34,7 +40,7 @@ namespace DogEgg.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                _logger?.LogInformation(ex.Message);
                 return "error";
                
             }
@@ -42,6 +48,31 @@ namespace DogEgg.WebApi.Controllers
 
         }
 
-       
+        /// <summary>
+        /// 聊天机器人
+        /// </summary>
+        /// <returns></returns>
+        [Route("ChatEcho")]
+        [HttpPost]
+        public string ChatEcho(string msg)
+        {
+            try
+            {
+                msg = msg + new Random().NextDouble();
+                _logger.LogInformation(msg);
+                return msg;
+
+            }
+            catch (Exception ex)
+            {
+                _logger ?.LogInformation(ex.Message);
+                return "error";
+
+            }
+
+
+        }
+
+
     }
 }
