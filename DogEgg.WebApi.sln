@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.WebApi", "DogEgg.WebApi\DogEgg.WebApi.csproj", "{4B930100-0966-48B6-8D6F-E98E23122A44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.WebApi", "DogEgg.WebApi\DogEgg.WebApi.csproj", "{4B930100-0966-48B6-8D6F-E98E23122A44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.Core", "DogEgg.Core\DogEgg.Core.csproj", "{2EBD4E79-F55F-4F07-8C63-6C1CE292CA43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.Core", "DogEgg.Core\DogEgg.Core.csproj", "{2EBD4E79-F55F-4F07-8C63-6C1CE292CA43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.Service", "DogEgg.Service\DogEgg.Service.csproj", "{4C045E07-657C-46AB-BFE2-81944E5BD524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.Service", "DogEgg.Service\DogEgg.Service.csproj", "{4C045E07-657C-46AB-BFE2-81944E5BD524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.Driver", "DogEgg.Driver\DogEgg.Driver.csproj", "{04CB4D13-1F25-4BDF-85B4-7B028C380480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.Driver", "DogEgg.Driver\DogEgg.Driver.csproj", "{04CB4D13-1F25-4BDF-85B4-7B028C380480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.Middware", "DogEgg.Middware\DogEgg.Middware.csproj", "{444E5A50-8EA9-4709-BEFE-ECF4260319E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.Middware", "DogEgg.Middware\DogEgg.Middware.csproj", "{444E5A50-8EA9-4709-BEFE-ECF4260319E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.DbAccess", "DogEgg.DbAccess\DogEgg.DbAccess.csproj", "{6F61EB33-2055-4030-9599-78A7F87B59D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.DbAccess", "DogEgg.DbAccess\DogEgg.DbAccess.csproj", "{6F61EB33-2055-4030-9599-78A7F87B59D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.Model", "DogEgg.Model\DogEgg.Model.csproj", "{81770997-7658-4ED6-AC27-4F9EA218EE46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogEgg.Model", "DogEgg.Model\DogEgg.Model.csproj", "{81770997-7658-4ED6-AC27-4F9EA218EE46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{149F599F-0637-407C-BD8E-CDD27CBF47FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.csproj", "{149F599F-0637-407C-BD8E-CDD27CBF47FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogEgg.UnitTest", "DogEgg.UnitTest\DogEgg.UnitTest.csproj", "{68ADC64F-772B-4CBD-863A-0614C0F9C62D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{149F599F-0637-407C-BD8E-CDD27CBF47FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{149F599F-0637-407C-BD8E-CDD27CBF47FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{149F599F-0637-407C-BD8E-CDD27CBF47FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68ADC64F-772B-4CBD-863A-0614C0F9C62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68ADC64F-772B-4CBD-863A-0614C0F9C62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68ADC64F-772B-4CBD-863A-0614C0F9C62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68ADC64F-772B-4CBD-863A-0614C0F9C62D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
