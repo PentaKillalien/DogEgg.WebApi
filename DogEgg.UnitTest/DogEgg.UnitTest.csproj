@@ -13,4 +13,15 @@
     <PackageReference Include="coverlet.collector" Version="3.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DogEgg.Core\DogEgg.Core.csproj" />
+    <ProjectReference Include="..\DogEgg.DbAccess\DogEgg.DbAccess.csproj" />
+    <ProjectReference Include="..\DogEgg.Driver\DogEgg.Driver.csproj" />
+    <ProjectReference Include="..\DogEgg.Middware\DogEgg.Middware.csproj" />
+    <ProjectReference Include="..\DogEgg.Model\DogEgg.Model.csproj" />
+    <ProjectReference Include="..\DogEgg.Service\DogEgg.Service.csproj" />
+    <ProjectReference Include="..\DogEgg.WebApi\DogEgg.WebApi.csproj" />
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
 </Project>
