@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility.LogHelper;
 
 namespace DogEgg.Service.DogEggService
 {
@@ -26,6 +27,8 @@ namespace DogEgg.Service.DogEggService
             _logger.LogInformation("连接");
             Server.Connect();
             Server.InfoTrigger = new Action<string,string>(InfoTrigger);
+
+            MyLogFunc.WriteOpLogPlus("abc","440107-1");
 
 
         }
