@@ -17,8 +17,8 @@ namespace DogEgg.Service.DogEggService
         }
         public void Start()
         {
-            var job = new FluentSchedulerDriver();
-            job.Connect();
+            //var job = new FluentSchedulerDriver();
+            //job.Connect();
 
         }
     }

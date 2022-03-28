@@ -26,16 +26,9 @@ namespace DogEgg.Service.DogEggService
             Server =  new TcpServerDriver(9004);
             _logger.LogInformation("连接");
             Server.Connect();
-            Server.InfoTrigger = new Action<string,string>(InfoTrigger);
-
-            MyLogFunc.WriteOpLogPlus("abc","440107-1");
 
 
         }
 
-        private void InfoTrigger(string Info,string ip) {
-            Server.SendInfoBack(Info, ip);
-            _logger.LogInformation($"收到消息,内容({Info}),来自IP{ip}");
-        }
     }
 }

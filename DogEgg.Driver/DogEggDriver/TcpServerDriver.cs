@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility.LogHelper;
 
 namespace DogEgg.Driver.DogEggDriver
 {
@@ -32,7 +33,6 @@ namespace DogEgg.Driver.DogEggDriver
                 }
             }
         }
-        public Action<string,string> InfoTrigger;
         public void Connect() {
             Task.Factory.StartNew(async () => {
                 var host = SuperSocketHostBuilder.Create<TextPackageInfo, MyLinePipelineFilter>().UsePackageHandler(async (s, p) =>
@@ -41,7 +41,8 @@ namespace DogEgg.Driver.DogEggDriver
                     {
                         try
                         {
-                            InfoTrigger?.Invoke(p.Text.ToString(),s.RemoteEndPoint.ToString().Split(':')[0]);
+                            Console.WriteLine($"Rec:{p.Text}");
+                            MyLogFunc.WriteOpLogPlus($"Rec:{p.Text}", $"{s.RemoteEndPoint.ToString().Split(':')[0]}");
 
                         }
                         catch (Exception ex)
