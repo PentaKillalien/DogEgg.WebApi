@@ -54,7 +54,7 @@ namespace DogEgg.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DogEgg.WebApi v1"));
             }
-            //app.UseCors();
+            app.UseMiddleware<CorsMidWare>();
             //app.UseHttpsRedirection();
 
             app.UseRouting();
