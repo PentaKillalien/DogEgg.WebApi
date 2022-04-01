@@ -11,7 +11,7 @@ namespace DogEgg.Model.NetSwap
     /// </summary>
     public class StandardDataDto
     {
-        public int Stauts { get; set; }
+        public int Status { get; set; }
 
         public Object Data { get; set; }
 

@@ -21,7 +21,7 @@ namespace DogEgg.WebApi.Controllers
             try
             {
                 return new StandardDataDto() { 
-                    Stauts=0,
+                    Status=0,
                      Data = new List<LogDto>() { 
                       new LogDto(){ 
                        ID=1,
